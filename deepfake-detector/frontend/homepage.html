@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deepfake Detector - Home</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <div class="home-container">
+        <h1 class="home-title">Deepfake Detector</h1>
+        <p class="home-subtitle">Analyze videos and images to detect deepfakes using AI.</p>
+
+        <div class="home-buttons">
+            <button class="home-btn detect-btn" onclick="goToDetect()">Start Detection</button>
+            <button class="home-btn dashboard-btn" onclick="goToDashboard()">View Dashboard</button>
+        </div>
+
+        <img src="assets/ai-banner.png" class="home-image" alt="AI Illustration" />
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<body class="homepage">
+
+<!-- OVERLAY -->
+<div class="overlay"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-title">Deepfake Detector</div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="detect.html">Detect</a>
+        <a href="dashboard.html">Dashboard</a>
+    </div>
+</nav>
+
+<!-- MAIN CONTENT (homepage hero) -->
+<div class="home-hero">
+    <h1 class="home-title">Your AI Deepfake Analyzer</h1>
+    <p class="home-subtitle">
+        Detect manipulated videos and images instantly with powerful machine learning.
+    </p>
+
+    <div class="home-buttons">
+        <button class="home-btn primary-btn" onclick="goToDetect()">Start Detection</button>
+        <button class="home-btn secondary-btn" onclick="goToDashboard()">View Dashboard</button>
+    </div>
+
+    <div class="hero-card">
+        <h3>How It Works</h3>
+        <p>
+            Upload an image or video, and our advanced AI model analyzes it for deepfake traces,
+            giving you accurate results instantly.
+        </p>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    © 2025 Deepfake Detector | Built by Pruthvi
+</footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>

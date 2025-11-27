@@ -1,0 +1,7 @@
+env/ 
+node_modules/ 
+data/ 
+downloads/ 
+outputs/ 
+models/ 
+*.zip 

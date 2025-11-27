@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Deepfake Detector — Detect</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="detectpage">
+    <header class="site-navbar">
+      <div class="logo">Deepfake Detector</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="detect.html" class="active">Detect</a>
+        <a href="dashboard.html">Dashboard</a>
+      </div>
+    </header>
+
+    <main class="home-wrapper">
+      <section class="glass">
+        <h2 style="color: #00eaff">Deepfake Detection</h2>
+
+        <label class="upload-label">Upload Image/Video</label>
+        <input type="file" id="fileInput" accept="image/*,video/*" />
+
+        <div id="preview" class="preview glass"></div>
+
+        <button class="btn btn-neon" onclick="uploadFile()">Analyze</button>
+        <button class="btn btn-outline" onclick="startLiveDetection()">
+          Live Detection
+        </button>
+
+        <div id="livePreview" class="preview glass"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">© 2025 Deepfake Detector</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

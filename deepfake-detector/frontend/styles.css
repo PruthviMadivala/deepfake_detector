@@ -1,0 +1,207 @@
+/* =======================================================
+   PAGE BACKGROUNDS (PER PAGE)
+======================================================= */
+
+body.homepage {
+  background: url("assets/bg-home.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.detectpage {
+  background: url("assets/bg-detect.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.dashboardpage {
+  background: url("assets/bg-dashboard.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Dark overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(6px);
+  z-index: -1;
+}
+
+/* =======================================================
+   GLOBAL
+======================================================= */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #cfcfcf;
+  padding-top: 90px;
+  padding-bottom: 80px;
+}
+
+/* =======================================================
+   NAVBAR
+======================================================= */
+
+.site-navbar {
+  position: fixed;
+  top: 0;
+  left: 0; right: 0;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 28px;
+  background: rgba(0, 10, 20, 0.55);
+  border-bottom: 1px solid rgba(0, 234, 255, 0.25);
+  backdrop-filter: blur(14px);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: #00eaff;
+}
+
+.nav-links a {
+  margin-left: 14px;
+  color: #cfcfcf;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  color: #a259ff;
+}
+
+/* =======================================================
+   FOOTER
+======================================================= */
+
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0; right: 0;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,10,20,0.55);
+  border-top: 1px solid rgba(0,234,255,0.25);
+  backdrop-filter: blur(10px);
+}
+
+/* =======================================================
+   GLASS CARD
+======================================================= */
+
+.glass {
+  background: rgba(0, 20, 40, 0.45);
+  border: 1px solid rgba(0,234,255,0.25);
+  border-radius: 16px;
+  padding: 28px;
+  backdrop-filter: blur(18px);
+  box-shadow: 0 0 35px rgba(0,234,255,0.15);
+}
+
+/* =======================================================
+   HOME PAGE
+======================================================= */
+
+.home-wrapper {
+  max-width: 900px;
+  margin: auto;
+}
+
+.hero-title {
+  font-size: 40px;
+  font-weight: 800;
+  color: #00eaff;
+}
+
+.hero-desc {
+  color: #cfcfcf;
+  margin-bottom: 25px;
+}
+
+/* Buttons */
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 6px;
+  text-decoration: none;
+}
+
+.btn-neon {
+  border: 1px solid #00eaff;
+  color: #00eaff;
+  background: rgba(0,234,255,0.12);
+}
+
+.btn-neon:hover {
+  background: #00eaff;
+  color: #00121f;
+  box-shadow: 0 0 20px rgba(0,234,255,0.55);
+}
+
+.btn-outline {
+  border: 1px solid rgba(255,255,255,0.35);
+  color: #cfcfcf;
+}
+
+.section-title {
+  margin-bottom: 14px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: 25px;
+}
+
+/* =======================================================
+   DETECT PAGE
+======================================================= */
+
+.upload-label {
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.preview {
+  margin-top: 20px;
+  min-height: 200px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* =======================================================
+   DASHBOARD PAGE
+======================================================= */
+
+.row {
+  padding: 14px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0,234,255,0.25);
+}
+
+.status-real {
+  background: #00ff88;
+  color: #00331a;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.status-fake {
+  background: #ff4f4f;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 8px;
+}

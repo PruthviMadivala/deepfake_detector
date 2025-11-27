@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Deepfake Detector — Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="dashboardpage">
+    <header class="site-navbar">
+      <div class="logo">Deepfake Detector</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="detect.html">Detect</a>
+        <a href="dashboard.html" class="active">Dashboard</a>
+      </div>
+    </header>
+
+    <main class="home-wrapper">
+      <section class="glass">
+        <h2 style="color: #00eaff">Detection Result</h2>
+
+        <div class="row"><span>Status</span><span id="status"></span></div>
+        <div class="row">
+          <span>Confidence</span><span id="confidence"></span>
+        </div>
+        <div class="row"><span>File Type</span><span id="filetype"></span></div>
+        <div class="row"><span>Time</span><span id="timestamp"></span></div>
+
+        <br />
+        <button class="btn btn-neon" onclick="goToDetect()">
+          Analyze Another
+        </button>
+        <button class="btn btn-outline" onclick="downloadPDF()">
+          Download PDF
+        </button>
+      </section>
+    </main>
+
+    <footer class="site-footer">© 2025 Deepfake Detector</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
